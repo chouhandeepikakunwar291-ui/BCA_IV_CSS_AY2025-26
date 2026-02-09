@@ -206,6 +206,8 @@ console.log(greeting);
 
 **Booleans** are simple: `true` or `false`. They answer YES/NO questions.
 
+A **boolean** (named after George Boole, a 19th-century mathematician who invented the algebra of logic) is a data type that has only two possible values: `true` and `false`. Booleans are the foundation of **conditional logic** — every decision your program makes ultimately boils down to a true/false question.
+
 ```javascript
 true     // Yes
 false    // No
@@ -222,26 +224,159 @@ const ageAbove18 = true;
 
 ---
 
-## 🔄 Automatic Type Conversion
+### Empty Values: `null` and `undefined`
 
-**JavaScript is "loosely typed"—it converts types automatically when needed.**
+JavaScript has two special values that represent the **absence of a meaningful value**: `null` and `undefined`. Understanding the distinction between them is important because you will encounter both frequently.
+
+#### `undefined` — "No value has been assigned yet"
+
+**Definition:** `undefined` means a variable has been **declared** (created) but has not been given a value. It is JavaScript's way of saying "this exists, but nothing has been put here yet."
 
 ```javascript
-console.log("5" + 3);        // "53" (number becomes string)
-console.log("5" - 3);        // 2 (string becomes number)
+// A variable declared without a value is automatically undefined
+let userName;
+console.log(userName);       // undefined
+console.log(typeof userName); // "undefined"
+
+// Function parameters that aren't passed are undefined
+function greet(name) {
+    console.log(name);        // undefined if called as greet()
+}
+greet();                      // undefined
+
+// Accessing a non-existent object property returns undefined
+const person = { name: "Alice" };
+console.log(person.age);     // undefined (no 'age' property exists)
+
+// A function without a return statement returns undefined
+function doNothing() {
+    // no return
+}
+console.log(doNothing());    // undefined
+```
+
+#### `null` — "Intentionally empty"
+
+**Definition:** `null` means the programmer has **deliberately** set a variable to "no value." It is an intentional assignment, unlike `undefined` which happens automatically.
+
+```javascript
+// Explicitly setting "no value"
+let selectedProduct = null;   // Nothing selected yet
+console.log(selectedProduct); // null
+
+// Clear a previously set variable
+let currentUser = "Alice";
+console.log(currentUser);     // "Alice"
+currentUser = null;           // User has logged out
+console.log(currentUser);     // null
+
+// typeof quirk: null is reported as "object" (a historical bug in JavaScript)
+console.log(typeof null);     // "object" (this is a well-known JavaScript bug!)
+// To properly check for null, use strict equality:
+console.log(currentUser === null);  // true (correct way)
+```
+
+#### Key Differences Between `null` and `undefined`
+
+```javascript
+// undefined = "nothing assigned yet" (automatic)
+// null = "deliberately set to nothing" (intentional)
+
+let a;                    // undefined (automatic — no value assigned)
+let b = null;             // null (intentional — explicitly set to nothing)
+
+// Comparison
+console.log(null == undefined);   // true (loose equality treats them as equal)
+console.log(null === undefined);  // false (strict equality — different types!)
+
+// Type checking
+console.log(typeof undefined);    // "undefined"
+console.log(typeof null);         // "object" (JavaScript bug!)
+```
+
+**Real-World Analogy:**
+- **undefined** = An empty seat in a classroom — nobody was assigned to sit there.
+- **null** = A seat with a "Reserved" sign removed — someone explicitly said "this seat is empty now."
+
+#### When to Use Which?
+
+```javascript
+// Use undefined: Let JavaScript handle it (don't manually assign undefined)
+let score;                    // JavaScript sets this to undefined for you
+
+// Use null: When you want to explicitly indicate "no value"
+let winner = null;            // No winner determined yet
+// Later in code:
+winner = "Team A";            // Now there's a winner
+
+// Common pattern: checking for both
+function processData(data) {
+    if (data === null || data === undefined) {
+        console.log("No data provided");
+        return;
+    }
+    console.log("Processing: " + data);
+}
+
+processData(null);       // "No data provided"
+processData(undefined);  // "No data provided"
+processData("Hello");    // "Processing: Hello"
+```
+
+---
+
+## 🔄 Automatic Type Conversion (Type Coercion)
+
+**Definition:** **Type coercion** is JavaScript's automatic conversion of one data type to another when an operation involves mixed types. This happens implicitly (without you asking for it) and is one of the most common sources of bugs for beginners.
+
+**Why does JavaScript do this?** JavaScript is a **dynamically typed** language (also called "loosely typed"), meaning variables don't have fixed types. When you combine a number with a string, JavaScript must decide what type to use — it "coerces" one value into the other's type.
+
+**Explicit vs Implicit Conversion:**
+- **Explicit conversion** (you do it deliberately): `Number("5")`, `String(42)`, `Boolean(0)`
+- **Implicit conversion** (JavaScript does it automatically): `"5" + 3` → `"53"`
+
+```javascript
+// Implicit type coercion (JavaScript does this automatically)
+console.log("5" + 3);        // "53" (number 3 becomes string "3", then concatenated)
+console.log("5" - 3);        // 2 (string "5" becomes number 5, then subtracted)
 console.log(true + 1);       // 2 (true is treated as 1)
 console.log(false + 1);      // 1 (false is treated as 0)
-console.log("10" * "2");     // 20 (both become numbers)
+console.log("10" * "2");     // 20 (both strings become numbers)
 ```
 
-**When Values Are "Falsy":**
+### Truthy and Falsy Values
+
+**Definition:** In JavaScript, every value has an inherent **boolean meaning** — it's either "truthy" (treated as `true`) or "falsy" (treated as `false`) when used in a boolean context (like an `if` condition).
+
+**The 6 Falsy Values** (memorize these — everything else is truthy!):
 ```javascript
-false, 0, "", null, undefined, NaN   // Treated as false
+false       // The boolean false itself
+0           // The number zero
+""          // An empty string (no characters)
+null        // Intentional absence of value  
+undefined   // No value assigned
+NaN         // "Not a Number" (result of invalid math)
 ```
 
-**When Values Are "Truthy":**
+**Everything else is Truthy** (treated as true):
 ```javascript
-true, 1, "0", "false", [], {}        // Treated as true
+true         // Obviously
+1            // Any non-zero number
+-1           // Negative numbers are truthy too!
+"0"          // A string containing "0" (it's not empty!)
+"false"      // A string containing "false" (it's still a non-empty string)
+[]           // An empty array (this surprises many beginners!)
+{}           // An empty object
+```
+
+**Why does this matter?** When you use any value in a condition, JavaScript automatically converts it to a boolean:
+```javascript
+const userName = "";
+if (userName) {
+    console.log("Hello, " + userName);  // Won't run (empty string is falsy)
+} else {
+    console.log("No name provided");    // This runs
+}
 ```
 
 **Real-World Example: Discount Calculator**

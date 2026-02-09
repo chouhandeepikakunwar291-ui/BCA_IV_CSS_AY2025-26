@@ -48,6 +48,34 @@ for (let i = 0; i < 5; i++) {
 
 ---
 
+#### Expression Statements
+
+An **expression statement** is a special combination: it's an expression that is used as a complete statement on its own line. The expression is evaluated, its result is computed, and then that result is discarded. Expression statements are important because they are the most common type of statement you'll write.
+
+```javascript
+// Expression statements: expressions used as standalone statements
+console.log("Hello");         // Function call expression used as a statement
+x = 5;                         // Assignment expression used as a statement
+counter++;                     // Increment expression used as a statement
+
+// These are expressions, but when written alone on a line,
+// they become expression statements:
+42;                            // Valid expression statement (but useless — value is discarded)
+"Hello";                       // Valid but useless — the string is computed and thrown away
+3 + 4;                         // Valid but useless — 7 is computed but not stored anywhere
+
+// Useful expression statements (the ones you'll actually write):
+alert("Welcome!");             // Function call — side effect: shows popup
+console.log(result);           // Function call — side effect: prints to console
+array.push(item);              // Method call — side effect: modifies array
+```
+
+**Why does this matter?** Understanding expression statements helps you see that JavaScript has a dual nature: some code produces values (expressions), and some code performs actions (statements). An expression statement bridges both — it's an expression that exists solely for its **side effect** (like printing to the console or modifying data), not for the value it produces.
+
+**Side Effect Definition:** A **side effect** is any change that a piece of code makes to the outside world beyond just computing a value. Examples include: printing to the console, modifying a variable, writing to a file, or sending data over the network.
+
+---
+
 #### Real-World Analogy
 Think of a recipe:
 - **Expression:** "Measure 2 cups of flour" - produces a measurement

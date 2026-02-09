@@ -8,7 +8,42 @@
 
 ## 📚 THEORY SESSION (90 minutes)
 
-### 1. What is Conditional Execution?
+### 1. Understanding Control Flow
+
+**Definition:** **Control flow** is the order in which the computer executes statements in a program. By default, JavaScript executes code from top to bottom, one line at a time. This is called **sequential execution** (or linear flow).
+
+There are three fundamental types of control flow:
+
+```
+┌─────────────────────────────────────────────────────┐
+│  1. SEQUENTIAL FLOW (Default)                       │
+│     Code runs top → bottom, line by line             │
+│     Example: const x = 5; const y = 10;             │
+│                                                     │
+│  2. CONDITIONAL FLOW (Decision Making)              │
+│     Code chooses which path to take based on a       │
+│     condition (true or false)                        │
+│     Example: if (x > 5) { ... } else { ... }        │
+│                                                     │
+│  3. ITERATIVE FLOW (Repetition / Loops)             │
+│     Code repeats a block multiple times              │
+│     Example: for (let i = 0; i < 10; i++) { ... }   │
+└─────────────────────────────────────────────────────┘
+```
+
+```javascript
+// Sequential flow — runs line by line, top to bottom
+const price = 100;              // Line 1: executed first
+const tax = price * 0.18;       // Line 2: executed second
+const total = price + tax;      // Line 3: executed third
+console.log(total);             // Line 4: executed fourth → 118
+```
+
+Today we learn **conditional flow** — how to make your program choose different paths. In Day 4-5, we'll learn **iterative flow** (loops).
+
+---
+
+### 2. What is Conditional Execution?
 
 **Conditional execution** means running specific code only if a condition is true.
 
