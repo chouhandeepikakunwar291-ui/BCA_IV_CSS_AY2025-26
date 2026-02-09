@@ -32,8 +32,6 @@
 | File | Purpose | Audience | Priority |
 |------|---------|----------|----------|
 | **[README.md](./README.md)** | Course overview, outcomes, schedule | All | ⭐⭐⭐ |
-| **[COPILOT_INSTRUCTIONS.md](./COPILOT_INSTRUCTIONS.md)** | AI context, teaching methods, code review guidelines | Instructors/AI | ⭐⭐⭐ |
-| **[DELIVERY_SUMMARY.md](./DELIVERY_SUMMARY.md)** | What's been created, next steps | Instructors | ⭐⭐ |
 | **[Quick-Reference.md](./Quick-Reference.md)** | JavaScript syntax cheat sheet | Students | ⭐⭐⭐ |
 
 ### 📖 Week 1 Content (Complete)
@@ -72,7 +70,6 @@
 
 | File | Purpose | Setup Time |
 |------|---------|-----------|
-| **[Google-Classroom-Integration.md](./Guides/Google-Classroom-Integration.md)** | How to use Google Classroom | 30 min |
 | **[GitHub-Classroom-Guide.md](./Guides/GitHub-Classroom-Guide.md)** | How to use GitHub, Git basics | 1 hour |
 | **[Assessment-Framework.md](./Guides/Assessment-Framework.md)** | Grading rubric, evaluation (ready) | Review |
 
@@ -302,12 +299,6 @@ END (3:00)
 
 ## 🌐 CLASSROOM INTEGRATION SUMMARY
 
-### Google Classroom Setup
-- **Primary use:** Assignment submission, grade tracking, announcements
-- **File:** [Google-Classroom-Integration.md](./Guides/Google-Classroom-Integration.md)
-- **Setup time:** 30 minutes
-- **Ongoing:** Post daily assignments, review submissions
-
 ### GitHub Classroom Setup
 - **Primary use:** Version control, code collaboration, portfolio building
 - **File:** [GitHub-Classroom-Guide.md](./Guides/GitHub-Classroom-Guide.md)
@@ -341,8 +332,6 @@ END (3:00)
 - 70-79: C (Satisfactory)
 - 60-69: D (Poor)
 - Below 60: F (Failing)
-
-**Rubric:** See [COPILOT_INSTRUCTIONS.md](./COPILOT_INSTRUCTIONS.md#grading)
 
 ---
 
@@ -432,7 +421,6 @@ Track these throughout course:
 ## 🔗 QUICK LINKS
 
 ### Essential Files to Remember
-- [COPILOT_INSTRUCTIONS.md](./COPILOT_INSTRUCTIONS.md) - USE FOR FUTURE AI HELP ⭐
 - [README.md](./README.md) - Course overview
 - [Quick-Reference.md](./Quick-Reference.md) - Student cheat sheet
 
