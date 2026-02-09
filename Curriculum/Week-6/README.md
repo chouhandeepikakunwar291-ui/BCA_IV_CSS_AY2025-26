@@ -87,23 +87,41 @@ Week 6 is your culmination week! You'll review all concepts from Weeks 1-5, comp
 - JavaScript frameworks (React, Vue, Angular overview)
 - Career pathways and next steps
 
+**Self-Study Materials:** 5 extensive documents in the [Self-Study/](./Self-Study/) folder covering DOM, Events, Web APIs, Async JS, and Modules
+
 **Practice Problems:** 5+ challenges  
 **Difficulty Range:** Intermediate to Hard
 
 ---
 
-## 📚 File
+## 📚 Files
 
+### Main Review File
 **File:** [`Week6-Final-Review-Assessment.md`](./Week6-Final-Review-Assessment.md)
 
 This comprehensive file contains:
 - Complete review of all 5 weeks
 - Practice problems with solutions
-- Assessment framework
+- Assessment framework (Sections A-D covering all syllabus topics)
 - Interview preparation
 - Advanced topics introduction
 - Career guidance
 - Resources for further learning
+
+### Self-Study Materials
+**Folder:** [`Self-Study/`](./Self-Study/)
+
+Five extensive documents for independent learning beyond the syllabus:
+
+| # | Document | Topic | Time |
+|---|----------|-------|------|
+| 1 | [DOM-Manipulation.md](./Self-Study/DOM-Manipulation.md) | Selecting, creating, modifying HTML elements | 4-5 hrs |
+| 2 | [Event-Handling.md](./Self-Study/Event-Handling.md) | Clicks, keyboard, forms, bubbling, delegation | 3-4 hrs |
+| 3 | [Web-APIs-localStorage-Fetch.md](./Self-Study/Web-APIs-localStorage-Fetch.md) | Browser storage, HTTP requests, Fetch API | 4-5 hrs |
+| 4 | [Async-JavaScript.md](./Self-Study/Async-JavaScript.md) | Callbacks, Promises, async/await, event loop | 5-6 hrs |
+| 5 | [Modules-and-Code-Organization.md](./Self-Study/Modules-and-Code-Organization.md) | ES6 import/export, project structure | 3-4 hrs |
+
+**Total self-study time:** 19-24 hours
 
 ---
 
@@ -169,32 +187,42 @@ This comprehensive file contains:
 ✅ Variables and data types  
 ✅ Operators and expressions  
 ✅ Control flow (if/else, loops)  
-✅ Functions and closures  
-✅ Scope and hoisting  
+✅ Functions, closures, and recursion  
+✅ Scope, hoisting, and the call stack  
+✅ Rest parameters and optional arguments  
+✅ Empty values (null, undefined) and type conversion  
 
 ### Data Structures
-✅ Arrays and methods  
-✅ Objects and properties  
-✅ Strings and manipulation  
+✅ Arrays and methods (including further arrayology)  
+✅ Objects, properties, and mutability  
+✅ Strings and character codes  
+✅ Computing correlation (phi coefficient)  
 ✅ Complex data organization  
 
 ### Functional Programming
-✅ Higher-order functions  
+✅ Higher-order functions and abstraction  
 ✅ Callbacks and composition  
 ✅ Map, filter, reduce  
+✅ Script data set analysis  
+✅ Composability and recognizing text  
 ✅ Data transformation pipelines  
 
 ### Object-Oriented Programming
 ✅ Classes and constructors  
+✅ Prototypes and prototype chain  
 ✅ Inheritance and polymorphism  
-✅ Encapsulation and abstraction  
-✅ Design patterns  
+✅ Encapsulation and private `#` fields  
+✅ Getters, setters, and static methods  
+✅ Maps (data structure)  
+✅ Symbols and iterator interface  
+✅ Overriding derived properties  
 
-### Advanced Concepts
-✅ Asynchronous programming (basics)  
-✅ DOM manipulation (basics)  
-✅ REST APIs (basics)  
-✅ Web Storage (basics)  
+### Advanced Concepts (Self-Study)
+✅ DOM manipulation  
+✅ Event handling (bubbling, delegation)  
+✅ Asynchronous programming (Promises, async/await)  
+✅ Web APIs (localStorage, Fetch)  
+✅ ES6 Modules and code organization  
 
 ---
 

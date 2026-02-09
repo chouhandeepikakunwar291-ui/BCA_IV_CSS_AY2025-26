@@ -30,6 +30,8 @@ Week 1 introduces students to the fundamental building blocks of JavaScript. You
 - Your first program: "Hello World"
 - Numbers and basic arithmetic
 - Introduction to variables and the console
+- Empty values: `null` and `undefined`
+- Automatic type conversion and truthy/falsy values
 
 **Experiments:**
 - ✅ **Experiment 1:** JavaScript Program to Print Hello World

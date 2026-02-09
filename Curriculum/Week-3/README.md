@@ -26,11 +26,18 @@ Week 3 teaches you how to organize and manipulate data using arrays, objects, an
 
 **Topics Covered:**
 - Functions as first-class values
+- Declaration notation: function declarations vs expressions
+- Hoisting behavior
 - Higher-order functions
-- Closures and scope
+- The call stack (stack frames, stack overflow)
+- Closures deep dive (loop pitfalls, data privacy, memoization)
 - Function scope vs block scope
 - Variable shadowing
 - Lexical scoping
+- Optional arguments and default parameters
+- Recursion (factorial, Fibonacci, power, recursion vs loops)
+- Rest parameters and spread operator
+- Growing functions (design principles)
 
 **Practice Examples:** 12+ working programs  
 **Key Concept:** Understanding that functions are values, enabling powerful programming patterns
@@ -41,6 +48,7 @@ Week 3 teaches you how to organize and manipulate data using arrays, objects, an
 **File:** [`Day2-Arrays-And-Array-Methods.md`](./Day2-Arrays-And-Array-Methods.md)
 
 **Topics Covered:**
+- Understanding data sets
 - Creating arrays
 - Accessing array elements (indexing)
 - Array properties (length)
@@ -48,6 +56,7 @@ Week 3 teaches you how to organize and manipulate data using arrays, objects, an
 - Array iteration
 - Mutating vs non-mutating methods
 - Common array methods (slice, splice, includes, indexOf)
+- Further arrayology (concat, find, findIndex, some, every, flat, flatMap)
 
 **Practice Examples:** 15+ working programs  
 **Mini-Project:** Shopping Cart System with array operations
@@ -104,6 +113,8 @@ Week 3 teaches you how to organize and manipulate data using arrays, objects, an
 - Methods inside objects
 - Object iteration (for...in, Object.keys())
 - Nested objects and arrays
+- Object mutability (references vs values, identity, shallow copy)
+- Computing correlation (phi coefficient, 2×2 frequency tables)
 
 **Practice Examples:** 10+ working programs  
 **Integration Project:** ⭐ **Contact Manager System**

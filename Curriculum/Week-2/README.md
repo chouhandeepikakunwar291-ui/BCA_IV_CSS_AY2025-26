@@ -26,6 +26,7 @@ Week 2 teaches you how to control the flow of your programs using conditional st
 
 **Topics Covered:**
 - Expressions vs Statements
+- Expression Statements (when expressions stand alone as statements)
 - Variable declarations (const, let, var - good vs bad)
 - Naming conventions (camelCase, meaningful names)
 - The environment and bindings
@@ -56,6 +57,7 @@ Week 2 teaches you how to control the flow of your programs using conditional st
 **File:** [`Day3-Conditional-Execution.md`](./Day3-Conditional-Execution.md)
 
 **Topics Covered:**
+- Understanding Control Flow (sequential, conditional, repetition)
 - if statements for decision making
 - if/else patterns
 - else if chains

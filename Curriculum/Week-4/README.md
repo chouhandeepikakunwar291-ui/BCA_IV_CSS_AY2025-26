@@ -26,6 +26,7 @@ Week 4 teaches you functional programming paradigms using higher-order functions
 **File:** [`Day1-Higher-Order-Functions-Map.md`](./Day1-Higher-Order-Functions-Map.md)
 
 **Topics Covered:**
+- Abstraction and abstracting repetition
 - What are higher-order functions?
 - Functions that accept functions as parameters
 - Functions that return functions
@@ -33,6 +34,7 @@ Week 4 teaches you functional programming paradigms using higher-order functions
 - The map() method
 - Transforming data collections
 - Chaining methods
+- Strings and character codes (charCodeAt, codePointAt, Unicode)
 
 **Practice Examples:** 15+ working programs  
 **Key Concept:** Using map() to transform each element in an array
@@ -48,6 +50,7 @@ Week 4 teaches you functional programming paradigms using higher-order functions
 - The reduce() method for aggregation
 - Accumulator pattern
 - Combining map, filter, and reduce
+- Script data set (SCRIPTS data, characterScript function)
 - Function composition
 - Data transformation pipelines
 
@@ -105,6 +108,8 @@ Week 4 teaches you functional programming paradigms using higher-order functions
 
 **Topics Covered:**
 - Real-world data processing patterns
+- Composability (compose utility, pipeline pattern)
+- Recognizing text (countBy function, textScripts analysis)
 - Loading and parsing data
 - Data validation
 - Transformation pipelines

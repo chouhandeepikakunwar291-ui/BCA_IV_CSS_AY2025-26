@@ -31,7 +31,10 @@ Week 5 teaches you object-oriented programming (OOP) in JavaScript. You'll learn
 - The `this` keyword
 - Methods and properties
 - Static methods and properties
-- Getters and setters
+- Prototypes and the prototype chain (Object.create, Object.getPrototypeOf)
+- Getters and setters (get/set syntax, validation)
+- True private fields with `#` prefix
+- Maps (data structure: new Map, set/get/has, Map vs Object)
 - Creating instances with `new`
 
 **Practice Examples:** 15+ working programs  
@@ -46,10 +49,13 @@ Week 5 teaches you object-oriented programming (OOP) in JavaScript. You'll learn
 - Inheritance (extending classes)
 - The `extends` keyword
 - Calling parent methods with `super`
+- Overriding derived properties (prototype chain lookup, property shadowing)
 - Method overriding
 - Polymorphism patterns
 - Abstract classes (simulation)
-- Instanceof operator
+- Symbols (uniqueness, property keys, Symbol.for, well-known Symbols)
+- The iterator interface (Symbol.iterator, next/value/done, custom iterables)
+- Instanceof operator (how it works, instanceof vs typeof)
 - The prototype chain
 
 **Practice Examples:** 14+ working programs  
